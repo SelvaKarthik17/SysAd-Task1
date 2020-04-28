@@ -6,6 +6,7 @@ chmod +x /root/task3.sh
 chmod +x /root/task4.sh
 chmod +x /root/task5.sh
 chmod +x /root/H1.sh
+chmod +x /root/H2.sh
 
 alias userGenerate="./root/task1.sh"
 userGenerate
@@ -24,6 +25,10 @@ record
 
 alias finalattendance="./root/H1.sh"
 finalattendance
+
+alias nearest="./root/H2.sh"
+echo "0 12 * * * nearest" | crontab -
+
 
 
 
